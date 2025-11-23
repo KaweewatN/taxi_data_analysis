@@ -1,0 +1,5 @@
+# Ignore raw data folders and data files
+PARQUET-PROBE-202301/
+PARQUET-PROBE-202302/
+*.csv
+*.parquet
