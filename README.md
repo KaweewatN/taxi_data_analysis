@@ -1,6 +1,6 @@
 # Taxi Processed Data Dictionary
 
-This README describes the schema of the processed taxi data stored in `output/taxi_processed.parquet`.
+This README describes the schema of the processed taxi data stored in `taxi_processed.parquet`.
 
 ## Data Fields
 
