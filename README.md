@@ -25,7 +25,7 @@ This project analyzes **55+ million GPS records** from Bangkok taxis to provide 
 
 ### Key Statistics
 - **Total Records:** 55,483,806 GPS points
-- **Time Periods:** DAY (05:00-17:59), NIGHT (18:00-04:59)
+- **Time Periods:** DAY (06:00-17:59), NIGHT (18:00-05:59)
 - **Coverage:** Bangkok Metropolitan Region
 - **Spatial Resolution:** ~100m grid cells
 
@@ -88,12 +88,12 @@ open map_day_night_comparison.html
 - **Purpose:** Spatial clustering of taxi activity by time period
 
 **Time Period Definitions:**
-- **DAY:** 05:00 - 17:59 (daytime hours)
-- **NIGHT:** 18:00 - 04:59 (nighttime hours)
+- **DAY:** 06:00 - 17:59 (daytime hours)
+- **NIGHT:** 18:00 - 05:59 (nighttime hours)
 
 ### 2. Night Demand Zones
 - **Output:** `output_night_demand_zones/`
-- **Time Range:** 18:00 - 04:59
+- **Time Range:** 18:00 - 05:59
 - **Metrics:** 
   - Occupied taxi count
   - Available taxi count
@@ -108,7 +108,7 @@ open map_day_night_comparison.html
 
 ### 4. Day vs Night Comparison
 - **Script:** `create_day_night_comparison.py`
-- **Time Periods:** DAY (05:00-17:59) vs NIGHT (18:00-04:59)
+- **Time Periods:** DAY (06:00-17:59) vs NIGHT (18:00-05:59)
 - **Purpose:** Compare activity patterns across daytime and nighttime
 - **Note:** Results will differ from old analysis due to new time definitions
 
@@ -151,9 +151,9 @@ All maps are built with **Folium** and include:
 | Night Demand | 🔴 Red | Extreme demand (ratio > 100) |
 | Night Demand | 🟠 Orange | High demand |
 | Taxi Deserts | 🟣 Purple | High % unhired taxis |
-| Day Activity | 🔵 Blue | Daytime zones (05:00-17:59) |
+| Day Activity | 🔵 Blue | Daytime zones (06:00-17:59) |
 | Day-Only | 🟢 Green | Active only during day |
-| Night-Only | 🟣 Purple | Active only at night (18:00-04:59) |
+| Night-Only | 🟣 Purple | Active only at night (18:00-05:59) |
 
 ### Running Jupyter Notebook (Optional)
 ```bash
@@ -304,7 +304,7 @@ open map_day_night_comparison.html
 
 ## 📊 Key Insights Summary
 
-### Nighttime Economic Zones (18:00-04:59)
+### Nighttime Economic Zones (18:00-05:59)
 - High-demand zones identified during nighttime hours
 - Includes evening commute, nightlife, and early morning activity
 - **Analysis:** Occupied vs available taxi ratio by location
@@ -315,8 +315,8 @@ open map_day_night_comparison.html
 - **Opportunity:** Optimize taxi dispatch to demand zones
 
 ### Day vs Night Activity
-- **Daytime (05:00-17:59):** All daylight and business hours
-- **Nighttime (18:00-04:59):** Evening, night, and early morning hours
+- **Daytime (06:00-17:59):** All daylight and business hours
+- **Nighttime (18:00-05:59):** Evening, night, and early morning hours
 - **Note:** New time definitions provide more comprehensive coverage
 - Results will show different patterns compared to previous narrow time windows
 
