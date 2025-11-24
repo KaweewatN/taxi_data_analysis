@@ -32,8 +32,8 @@ df = df.withColumn("hour", F.hour("ts"))
 
 df = df.withColumn(
     "time_period",
-    F.when((F.col("hour") >= 10) & (F.col("hour") < 16), "DAY")   # 10:00–16:00
-     .when((F.col("hour") >= 20) | (F.col("hour") < 2), "NIGHT") # 20:00–02:00
+    F.when((F.col("hour") >= 5) & (F.col("hour") < 18), "DAY")    # 05:00–17:59
+     .when((F.col("hour") >= 18) | (F.col("hour") < 5), "NIGHT")  # 18:00–04:59
      .otherwise("OTHER")
 )
 
