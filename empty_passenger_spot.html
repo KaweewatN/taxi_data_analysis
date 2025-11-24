@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_542edec3de12690ca7ddbabcb22c130b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_542edec3de12690ca7ddbabcb22c130b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_542edec3de12690ca7ddbabcb22c130b = L.map(
+                "map_542edec3de12690ca7ddbabcb22c130b",
+                {
+                    center: [13.82251916524702, 100.49548551959116],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a513cca0fad0f8529384cb6b51141622 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a513cca0fad0f8529384cb6b51141622.addTo(map_542edec3de12690ca7ddbabcb22c130b);
+        
+    
+            var marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_96d7efc2afb1e3c87663eb9d02b6001b = L.marker(
+                [14.08, 100.43],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_6f1c57394cc511d31fbcdd3e23e14cce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e7dcbae6da5113167a03293d8441b2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77fbed2bc7ed505849422470a35a3907 = $(`<div id="html_77fbed2bc7ed505849422470a35a3907" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 2 Empty Pings: 2</div>`)[0];
+                popup_6e7dcbae6da5113167a03293d8441b2e.setContent(html_77fbed2bc7ed505849422470a35a3907);
+            
+        
+
+        marker_96d7efc2afb1e3c87663eb9d02b6001b.bindPopup(popup_6e7dcbae6da5113167a03293d8441b2e)
+        ;
+
+        
+    
+    
+                marker_96d7efc2afb1e3c87663eb9d02b6001b.setIcon(icon_6f1c57394cc511d31fbcdd3e23e14cce);
+            
+    
+            var marker_a10dcf1f3a7da1b894fc0f6a57f8cf88 = L.marker(
+                [13.49, 100.81],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_ec043aab6cf6b50c841ad9da0385e534 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9926a7e6e3422a3f6a1b9057f40ba9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d14bc11e99b298453b6fae23a1eefd30 = $(`<div id="html_d14bc11e99b298453b6fae23a1eefd30" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 2 Empty Pings: 2</div>`)[0];
+                popup_a9926a7e6e3422a3f6a1b9057f40ba9d.setContent(html_d14bc11e99b298453b6fae23a1eefd30);
+            
+        
+
+        marker_a10dcf1f3a7da1b894fc0f6a57f8cf88.bindPopup(popup_a9926a7e6e3422a3f6a1b9057f40ba9d)
+        ;
+
+        
+    
+    
+                marker_a10dcf1f3a7da1b894fc0f6a57f8cf88.setIcon(icon_ec043aab6cf6b50c841ad9da0385e534);
+            
+    
+            var marker_7f0354761993d2219a5aa8fd88646ea5 = L.marker(
+                [14.1, 100.38],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_e36de881a56eaa468a08a4135f660e7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a52d8ede940d508f310895fe15cbb8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_920246b38c900eb7bca950b60c485f90 = $(`<div id="html_920246b38c900eb7bca950b60c485f90" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 4 Empty Pings: 4</div>`)[0];
+                popup_8a52d8ede940d508f310895fe15cbb8d.setContent(html_920246b38c900eb7bca950b60c485f90);
+            
+        
+
+        marker_7f0354761993d2219a5aa8fd88646ea5.bindPopup(popup_8a52d8ede940d508f310895fe15cbb8d)
+        ;
+
+        
+    
+    
+                marker_7f0354761993d2219a5aa8fd88646ea5.setIcon(icon_e36de881a56eaa468a08a4135f660e7d);
+            
+    
+            var marker_d60078ef4a97d8e0c6b83ac8e35e09a5 = L.marker(
+                [14.11, 100.43],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_c5e3c66ad0615ff98b9e10ef10e87940 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_926d899251d4587a42b00c90c94df2da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbf2fc4bbf16d914d14af2488e4341ff = $(`<div id="html_bbf2fc4bbf16d914d14af2488e4341ff" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_926d899251d4587a42b00c90c94df2da.setContent(html_bbf2fc4bbf16d914d14af2488e4341ff);
+            
+        
+
+        marker_d60078ef4a97d8e0c6b83ac8e35e09a5.bindPopup(popup_926d899251d4587a42b00c90c94df2da)
+        ;
+
+        
+    
+    
+                marker_d60078ef4a97d8e0c6b83ac8e35e09a5.setIcon(icon_c5e3c66ad0615ff98b9e10ef10e87940);
+            
+    
+            var marker_23fd5e2f971e73c8f37ce59301be7427 = L.marker(
+                [13.9, 100.26],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_77f427db18a42ea8a4b85942ba65ebec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7c41ee217e572ff941d6fa7279a6d4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba81b680d5bc20e3a730c3fb6a54dd89 = $(`<div id="html_ba81b680d5bc20e3a730c3fb6a54dd89" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 2 Empty Pings: 2</div>`)[0];
+                popup_b7c41ee217e572ff941d6fa7279a6d4c.setContent(html_ba81b680d5bc20e3a730c3fb6a54dd89);
+            
+        
+
+        marker_23fd5e2f971e73c8f37ce59301be7427.bindPopup(popup_b7c41ee217e572ff941d6fa7279a6d4c)
+        ;
+
+        
+    
+    
+                marker_23fd5e2f971e73c8f37ce59301be7427.setIcon(icon_77f427db18a42ea8a4b85942ba65ebec);
+            
+    
+            var marker_52ed4f840ae0748c1152f2d5ea163787 = L.marker(
+                [13.51, 100.67],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_3a3c740f5a98a27093a7f4fec8b1d62b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ac5dfac2baa9603a1a7f88550cceff6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb451df6682f4beeee8955cdb4de4df = $(`<div id="html_eeb451df6682f4beeee8955cdb4de4df" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_7ac5dfac2baa9603a1a7f88550cceff6.setContent(html_eeb451df6682f4beeee8955cdb4de4df);
+            
+        
+
+        marker_52ed4f840ae0748c1152f2d5ea163787.bindPopup(popup_7ac5dfac2baa9603a1a7f88550cceff6)
+        ;
+
+        
+    
+    
+                marker_52ed4f840ae0748c1152f2d5ea163787.setIcon(icon_3a3c740f5a98a27093a7f4fec8b1d62b);
+            
+    
+            var marker_eaf5b010385d57ba95e85b690c10e1c1 = L.marker(
+                [13.53, 100.71],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_b2fce5b6c94bb85de90234d243b9e451 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81b313d99b08d3ef4af87605a6d0455f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17907cc980f961b4792ac8d34c5786e9 = $(`<div id="html_17907cc980f961b4792ac8d34c5786e9" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 2 Empty Pings: 2</div>`)[0];
+                popup_81b313d99b08d3ef4af87605a6d0455f.setContent(html_17907cc980f961b4792ac8d34c5786e9);
+            
+        
+
+        marker_eaf5b010385d57ba95e85b690c10e1c1.bindPopup(popup_81b313d99b08d3ef4af87605a6d0455f)
+        ;
+
+        
+    
+    
+                marker_eaf5b010385d57ba95e85b690c10e1c1.setIcon(icon_b2fce5b6c94bb85de90234d243b9e451);
+            
+    
+            var marker_cc2f4bda7ac1df1d7be2537815e0544a = L.marker(
+                [13.99, 100.87],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_9fbca247e733469ba7453c3a0e36a3e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5bb86e2c640b950e54cd57d10a3f883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ac4446d5ca8d9ca645e47afb2266e5d = $(`<div id="html_9ac4446d5ca8d9ca645e47afb2266e5d" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 2 Empty Pings: 2</div>`)[0];
+                popup_d5bb86e2c640b950e54cd57d10a3f883.setContent(html_9ac4446d5ca8d9ca645e47afb2266e5d);
+            
+        
+
+        marker_cc2f4bda7ac1df1d7be2537815e0544a.bindPopup(popup_d5bb86e2c640b950e54cd57d10a3f883)
+        ;
+
+        
+    
+    
+                marker_cc2f4bda7ac1df1d7be2537815e0544a.setIcon(icon_9fbca247e733469ba7453c3a0e36a3e6);
+            
+    
+            var marker_df93c735f3654dc0becf0faa693910e1 = L.marker(
+                [13.5, 100.38],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_3e515e8a17015fa5191b332f3352518a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_178b9c51cfed468297be4336408fcbdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1706168b3886307329daf9a8d48893a8 = $(`<div id="html_1706168b3886307329daf9a8d48893a8" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 3 Empty Pings: 3</div>`)[0];
+                popup_178b9c51cfed468297be4336408fcbdd.setContent(html_1706168b3886307329daf9a8d48893a8);
+            
+        
+
+        marker_df93c735f3654dc0becf0faa693910e1.bindPopup(popup_178b9c51cfed468297be4336408fcbdd)
+        ;
+
+        
+    
+    
+                marker_df93c735f3654dc0becf0faa693910e1.setIcon(icon_3e515e8a17015fa5191b332f3352518a);
+            
+    
+            var marker_549fc83b83f9c126278b705cf11f5ee6 = L.marker(
+                [13.55, 100.16],
+                {
+}
+            ).addTo(marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c);
+        
+    
+            var icon_9e18ca2d80b3807288a8975abff2c472 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f7e0d4e667d9c7e9b24b6eed9ba16d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f96f3a00899bcc34c1258338622a1f04 = $(`<div id="html_f96f3a00899bcc34c1258338622a1f04" style="width: 100.0%; height: 100.0%;">Tourist Hotspot Empty Rate: 100.00% Total Pings: 6 Empty Pings: 6</div>`)[0];
+                popup_4f7e0d4e667d9c7e9b24b6eed9ba16d1.setContent(html_f96f3a00899bcc34c1258338622a1f04);
+            
+        
+
+        marker_549fc83b83f9c126278b705cf11f5ee6.bindPopup(popup_4f7e0d4e667d9c7e9b24b6eed9ba16d1)
+        ;
+
+        
+    
+    
+                marker_549fc83b83f9c126278b705cf11f5ee6.setIcon(icon_9e18ca2d80b3807288a8975abff2c472);
+            
+    
+            marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c.addTo(map_542edec3de12690ca7ddbabcb22c130b);
+        
+    
+            var marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_5cc01186fa27d875b43602d5a2851a89 = L.marker(
+                [13.93, 100.79],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_51b8612504c99511639f6d3ecd3a22da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfffe397c1ab4342b34325c85da9c739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5870919ff841c403d2d6dc969d695329 = $(`<div id="html_5870919ff841c403d2d6dc969d695329" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 4 Empty Pings: 4</div>`)[0];
+                popup_cfffe397c1ab4342b34325c85da9c739.setContent(html_5870919ff841c403d2d6dc969d695329);
+            
+        
+
+        marker_5cc01186fa27d875b43602d5a2851a89.bindPopup(popup_cfffe397c1ab4342b34325c85da9c739)
+        ;
+
+        
+    
+    
+                marker_5cc01186fa27d875b43602d5a2851a89.setIcon(icon_51b8612504c99511639f6d3ecd3a22da);
+            
+    
+            var marker_d50090a95223b13f7fd117303c026199 = L.marker(
+                [14.08, 100.01],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_cb515482382c48c0a3f5a2e5a014c0fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f808658d0f1980caea5d8f5f4f58364 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc6eceb5578445277f456634cdba358a = $(`<div id="html_dc6eceb5578445277f456634cdba358a" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_4f808658d0f1980caea5d8f5f4f58364.setContent(html_dc6eceb5578445277f456634cdba358a);
+            
+        
+
+        marker_d50090a95223b13f7fd117303c026199.bindPopup(popup_4f808658d0f1980caea5d8f5f4f58364)
+        ;
+
+        
+    
+    
+                marker_d50090a95223b13f7fd117303c026199.setIcon(icon_cb515482382c48c0a3f5a2e5a014c0fa);
+            
+    
+            var marker_1fff721dfcc1ded55cc62ce768c9d5dc = L.marker(
+                [13.93, 100.11],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_927b0ed20fcac906ecec553018270073 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d63b76129a12a567d77cd261a61272d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e691c200f1fe29bd63081ae03cf335ad = $(`<div id="html_e691c200f1fe29bd63081ae03cf335ad" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 3 Empty Pings: 3</div>`)[0];
+                popup_d63b76129a12a567d77cd261a61272d3.setContent(html_e691c200f1fe29bd63081ae03cf335ad);
+            
+        
+
+        marker_1fff721dfcc1ded55cc62ce768c9d5dc.bindPopup(popup_d63b76129a12a567d77cd261a61272d3)
+        ;
+
+        
+    
+    
+                marker_1fff721dfcc1ded55cc62ce768c9d5dc.setIcon(icon_927b0ed20fcac906ecec553018270073);
+            
+    
+            var marker_43f846938bd76a8ba47b319a2c7fda96 = L.marker(
+                [13.53, 100.77],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_3442c9abf67ac3a30874bc287704b5a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7f2385d62a83f78080d4076aa374a62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f4f142c042e1148a86e7ca8f6fb93d5 = $(`<div id="html_4f4f142c042e1148a86e7ca8f6fb93d5" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 5 Empty Pings: 5</div>`)[0];
+                popup_d7f2385d62a83f78080d4076aa374a62.setContent(html_4f4f142c042e1148a86e7ca8f6fb93d5);
+            
+        
+
+        marker_43f846938bd76a8ba47b319a2c7fda96.bindPopup(popup_d7f2385d62a83f78080d4076aa374a62)
+        ;
+
+        
+    
+    
+                marker_43f846938bd76a8ba47b319a2c7fda96.setIcon(icon_3442c9abf67ac3a30874bc287704b5a0);
+            
+    
+            var marker_87fa740d7456c11e6f861cf52680dac0 = L.marker(
+                [14.09, 100.85],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_6ecd785451de95a0bb71e339bb1140cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de8a28f6bab9b1bf393ea6509991a968 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72b53d417476325e256dba625c5e9aad = $(`<div id="html_72b53d417476325e256dba625c5e9aad" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_de8a28f6bab9b1bf393ea6509991a968.setContent(html_72b53d417476325e256dba625c5e9aad);
+            
+        
+
+        marker_87fa740d7456c11e6f861cf52680dac0.bindPopup(popup_de8a28f6bab9b1bf393ea6509991a968)
+        ;
+
+        
+    
+    
+                marker_87fa740d7456c11e6f861cf52680dac0.setIcon(icon_6ecd785451de95a0bb71e339bb1140cc);
+            
+    
+            var marker_f2293cbb59d433572c43ea7364ede4ac = L.marker(
+                [14.03, 100.03],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_28e4033f0f5cef837644964168600595 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab53df73667be3e269f175745e36d15c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bcf945be24b252fa0a6d84feec0f99f = $(`<div id="html_6bcf945be24b252fa0a6d84feec0f99f" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_ab53df73667be3e269f175745e36d15c.setContent(html_6bcf945be24b252fa0a6d84feec0f99f);
+            
+        
+
+        marker_f2293cbb59d433572c43ea7364ede4ac.bindPopup(popup_ab53df73667be3e269f175745e36d15c)
+        ;
+
+        
+    
+    
+                marker_f2293cbb59d433572c43ea7364ede4ac.setIcon(icon_28e4033f0f5cef837644964168600595);
+            
+    
+            var marker_7401f52296a6a031aa5f388e72f00a47 = L.marker(
+                [14.16, 100.63],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_43ebfda94c7264e7e643989e09971c74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e90445e266df5f5199c2418eb2cd5a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b67ce35dd0747d98eb61680f43cc5553 = $(`<div id="html_b67ce35dd0747d98eb61680f43cc5553" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 53 Empty Pings: 53</div>`)[0];
+                popup_5e90445e266df5f5199c2418eb2cd5a9.setContent(html_b67ce35dd0747d98eb61680f43cc5553);
+            
+        
+
+        marker_7401f52296a6a031aa5f388e72f00a47.bindPopup(popup_5e90445e266df5f5199c2418eb2cd5a9)
+        ;
+
+        
+    
+    
+                marker_7401f52296a6a031aa5f388e72f00a47.setIcon(icon_43ebfda94c7264e7e643989e09971c74);
+            
+    
+            var marker_5698e7d48602a463ac525ddc8a2621f6 = L.marker(
+                [13.95, 100.26],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_530e96845bbea0cdcdab0188b1a19b1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a234591c23a39552a5f16d283a12c4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ed1a857cd1affce30218c149be3776 = $(`<div id="html_a3ed1a857cd1affce30218c149be3776" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 1 Empty Pings: 1</div>`)[0];
+                popup_9a234591c23a39552a5f16d283a12c4c.setContent(html_a3ed1a857cd1affce30218c149be3776);
+            
+        
+
+        marker_5698e7d48602a463ac525ddc8a2621f6.bindPopup(popup_9a234591c23a39552a5f16d283a12c4c)
+        ;
+
+        
+    
+    
+                marker_5698e7d48602a463ac525ddc8a2621f6.setIcon(icon_530e96845bbea0cdcdab0188b1a19b1f);
+            
+    
+            var marker_f02377c043d1aa9d15fe1fa454be85a5 = L.marker(
+                [14.19, 100.59],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_bdbe312905af27f072c0b430f24847d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ce93223f5a924eb287dc46bac687ccd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7a6c9ef296c92a0706b3a00820f3562 = $(`<div id="html_d7a6c9ef296c92a0706b3a00820f3562" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 24 Empty Pings: 24</div>`)[0];
+                popup_7ce93223f5a924eb287dc46bac687ccd.setContent(html_d7a6c9ef296c92a0706b3a00820f3562);
+            
+        
+
+        marker_f02377c043d1aa9d15fe1fa454be85a5.bindPopup(popup_7ce93223f5a924eb287dc46bac687ccd)
+        ;
+
+        
+    
+    
+                marker_f02377c043d1aa9d15fe1fa454be85a5.setIcon(icon_bdbe312905af27f072c0b430f24847d4);
+            
+    
+            var marker_187c82096ef158fa53c7b626e43c40d4 = L.marker(
+                [13.69, 100.07],
+                {
+}
+            ).addTo(marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5);
+        
+    
+            var icon_cb467eb14060a5ef2bbeaa71ecf638f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af665270c0040e8339f44ff086f4f863 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3326e6c6d6fa57660ff13499ab5a89f2 = $(`<div id="html_3326e6c6d6fa57660ff13499ab5a89f2" style="width: 100.0%; height: 100.0%;">Non-Tourist Hotspot Empty Rate: 100.00% Total Pings: 3 Empty Pings: 3</div>`)[0];
+                popup_af665270c0040e8339f44ff086f4f863.setContent(html_3326e6c6d6fa57660ff13499ab5a89f2);
+            
+        
+
+        marker_187c82096ef158fa53c7b626e43c40d4.bindPopup(popup_af665270c0040e8339f44ff086f4f863)
+        ;
+
+        
+    
+    
+                marker_187c82096ef158fa53c7b626e43c40d4.setIcon(icon_cb467eb14060a5ef2bbeaa71ecf638f4);
+            
+    
+            marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5.addTo(map_542edec3de12690ca7ddbabcb22c130b);
+        
+    
+            var layer_control_ca57bb0c9c5f00b2a1fb96e9173218c4_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a513cca0fad0f8529384cb6b51141622,
+                },
+                overlays :  {
+                    "Tourist Hotspots" : marker_cluster_e12eb958b638a1c94a66b6d8ea8bd07c,
+                    "Non-Tourist Hotspots" : marker_cluster_a6ed7c27b9fdee52c418eacb5579c2d5,
+                },
+            };
+            let layer_control_ca57bb0c9c5f00b2a1fb96e9173218c4 = L.control.layers(
+                layer_control_ca57bb0c9c5f00b2a1fb96e9173218c4_layers.base_layers,
+                layer_control_ca57bb0c9c5f00b2a1fb96e9173218c4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_542edec3de12690ca7ddbabcb22c130b);
+
+        
+</script>
+</html>

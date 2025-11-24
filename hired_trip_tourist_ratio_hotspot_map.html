@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_706d9b9449f3db842151ff53b520897d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_706d9b9449f3db842151ff53b520897d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_706d9b9449f3db842151ff53b520897d = L.map(
+                "map_706d9b9449f3db842151ff53b520897d",
+                {
+                    center: [13.82251916524702, 100.49548551959116],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e547f6578d271abda6be7e9723f7e853 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e547f6578d271abda6be7e9723f7e853.addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var marker_9792f3e0e3dc4dff70e1a198f93c9751 = L.marker(
+                [13.87, 100.9],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_54daf3032cd2555b679984796f5cf477 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f8850ed6150d2f2de430c7b484566ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39782a2e7c43757d397cef5b774ce91a = $(`<div id="html_39782a2e7c43757d397cef5b774ce91a" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 72 Non-Tourist Hired Trips: 0 Ratio: 72000000.00</div>`)[0];
+                popup_5f8850ed6150d2f2de430c7b484566ee.setContent(html_39782a2e7c43757d397cef5b774ce91a);
+            
+        
+
+        marker_9792f3e0e3dc4dff70e1a198f93c9751.bindPopup(popup_5f8850ed6150d2f2de430c7b484566ee)
+        ;
+
+        
+    
+    
+                marker_9792f3e0e3dc4dff70e1a198f93c9751.setIcon(icon_54daf3032cd2555b679984796f5cf477);
+            
+    
+            var marker_4781d348961f0039b8fe6029e9f89b5d = L.marker(
+                [13.87, 100.89],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_bb0a70cb0a533354e1027c96b24ead73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1a5440489920a821a30516b37879801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8641b3023c0f795c3e97ff947261c289 = $(`<div id="html_8641b3023c0f795c3e97ff947261c289" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 27 Non-Tourist Hired Trips: 0 Ratio: 27000000.00</div>`)[0];
+                popup_f1a5440489920a821a30516b37879801.setContent(html_8641b3023c0f795c3e97ff947261c289);
+            
+        
+
+        marker_4781d348961f0039b8fe6029e9f89b5d.bindPopup(popup_f1a5440489920a821a30516b37879801)
+        ;
+
+        
+    
+    
+                marker_4781d348961f0039b8fe6029e9f89b5d.setIcon(icon_bb0a70cb0a533354e1027c96b24ead73);
+            
+    
+            var marker_491f999ef20903f0378535324b26a555 = L.marker(
+                [13.88, 100.05],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_b69542c2814403d8e26aa1e1eb074806 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0dfe465de116eb6b7f240a89387d9c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0ce5ea071f959158f80c694172a23d5 = $(`<div id="html_f0ce5ea071f959158f80c694172a23d5" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 27 Non-Tourist Hired Trips: 0 Ratio: 27000000.00</div>`)[0];
+                popup_d0dfe465de116eb6b7f240a89387d9c9.setContent(html_f0ce5ea071f959158f80c694172a23d5);
+            
+        
+
+        marker_491f999ef20903f0378535324b26a555.bindPopup(popup_d0dfe465de116eb6b7f240a89387d9c9)
+        ;
+
+        
+    
+    
+                marker_491f999ef20903f0378535324b26a555.setIcon(icon_b69542c2814403d8e26aa1e1eb074806);
+            
+    
+            var marker_6417a73c1dd8e203c7992f5a32d2d805 = L.marker(
+                [13.44, 100.01],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_3552944ea119fcb7070b199922e1c3c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04beae33a93123a2a737cd72693b34fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63d535ff47d1b07c373d37b152eff30b = $(`<div id="html_63d535ff47d1b07c373d37b152eff30b" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 21 Non-Tourist Hired Trips: 0 Ratio: 21000000.00</div>`)[0];
+                popup_04beae33a93123a2a737cd72693b34fa.setContent(html_63d535ff47d1b07c373d37b152eff30b);
+            
+        
+
+        marker_6417a73c1dd8e203c7992f5a32d2d805.bindPopup(popup_04beae33a93123a2a737cd72693b34fa)
+        ;
+
+        
+    
+    
+                marker_6417a73c1dd8e203c7992f5a32d2d805.setIcon(icon_3552944ea119fcb7070b199922e1c3c0);
+            
+    
+            var marker_7992e3e8e77505642e49af4b47fcfbbd = L.marker(
+                [13.9, 100.07],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_0228e7fb412945044b8951ebf81dd4fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3ab82654ec218c5d30676765c8ae1c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27d61ccf3c3fee20ea6b36792becef2d = $(`<div id="html_27d61ccf3c3fee20ea6b36792becef2d" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 16 Non-Tourist Hired Trips: 0 Ratio: 16000000.00</div>`)[0];
+                popup_e3ab82654ec218c5d30676765c8ae1c6.setContent(html_27d61ccf3c3fee20ea6b36792becef2d);
+            
+        
+
+        marker_7992e3e8e77505642e49af4b47fcfbbd.bindPopup(popup_e3ab82654ec218c5d30676765c8ae1c6)
+        ;
+
+        
+    
+    
+                marker_7992e3e8e77505642e49af4b47fcfbbd.setIcon(icon_0228e7fb412945044b8951ebf81dd4fd);
+            
+    
+            var marker_78d36a6d81b26d95a1b4b2b472b40822 = L.marker(
+                [14.16, 100.43],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_0d01ae00b1c60d131258cf32aaa193ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8253bd2cfbc45c107290b29c40bae68b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41167ae0c2d2b08fdf5eb4bdcb389fd5 = $(`<div id="html_41167ae0c2d2b08fdf5eb4bdcb389fd5" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 13 Non-Tourist Hired Trips: 0 Ratio: 13000000.00</div>`)[0];
+                popup_8253bd2cfbc45c107290b29c40bae68b.setContent(html_41167ae0c2d2b08fdf5eb4bdcb389fd5);
+            
+        
+
+        marker_78d36a6d81b26d95a1b4b2b472b40822.bindPopup(popup_8253bd2cfbc45c107290b29c40bae68b)
+        ;
+
+        
+    
+    
+                marker_78d36a6d81b26d95a1b4b2b472b40822.setIcon(icon_0d01ae00b1c60d131258cf32aaa193ef);
+            
+    
+            var marker_9479ad9d58edf60c16d8462132b472b3 = L.marker(
+                [14.1, 100.58],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_6bde652a9e7134be901d52d363b6116a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bad0faa88d8b3e518e0082114eb8c07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_988e063e1349ab17869cc7da1507bc9b = $(`<div id="html_988e063e1349ab17869cc7da1507bc9b" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 12 Non-Tourist Hired Trips: 0 Ratio: 12000000.00</div>`)[0];
+                popup_5bad0faa88d8b3e518e0082114eb8c07.setContent(html_988e063e1349ab17869cc7da1507bc9b);
+            
+        
+
+        marker_9479ad9d58edf60c16d8462132b472b3.bindPopup(popup_5bad0faa88d8b3e518e0082114eb8c07)
+        ;
+
+        
+    
+    
+                marker_9479ad9d58edf60c16d8462132b472b3.setIcon(icon_6bde652a9e7134be901d52d363b6116a);
+            
+    
+            var marker_860757ccbaddd5f90a8fcc9e83770b9b = L.marker(
+                [13.86, 100.27],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_b4a6c95505b3b982e16af6c846d7daa1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfbc1ad1ed0644fba40252cf67d1d8b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9812f9a1187e9008f19930d8d03e6b4e = $(`<div id="html_9812f9a1187e9008f19930d8d03e6b4e" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 10 Non-Tourist Hired Trips: 0 Ratio: 10000000.00</div>`)[0];
+                popup_dfbc1ad1ed0644fba40252cf67d1d8b7.setContent(html_9812f9a1187e9008f19930d8d03e6b4e);
+            
+        
+
+        marker_860757ccbaddd5f90a8fcc9e83770b9b.bindPopup(popup_dfbc1ad1ed0644fba40252cf67d1d8b7)
+        ;
+
+        
+    
+    
+                marker_860757ccbaddd5f90a8fcc9e83770b9b.setIcon(icon_b4a6c95505b3b982e16af6c846d7daa1);
+            
+    
+            var marker_bc31d900c12552be2f4ae7c7d5f15668 = L.marker(
+                [13.76, 100.2],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_cd4add02fa6c8a03ed90df890c40dc16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2344e36ed6416ffd5930b81d260d166e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f606f2fe58399c5500e755d75dde4984 = $(`<div id="html_f606f2fe58399c5500e755d75dde4984" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 10 Non-Tourist Hired Trips: 0 Ratio: 10000000.00</div>`)[0];
+                popup_2344e36ed6416ffd5930b81d260d166e.setContent(html_f606f2fe58399c5500e755d75dde4984);
+            
+        
+
+        marker_bc31d900c12552be2f4ae7c7d5f15668.bindPopup(popup_2344e36ed6416ffd5930b81d260d166e)
+        ;
+
+        
+    
+    
+                marker_bc31d900c12552be2f4ae7c7d5f15668.setIcon(icon_cd4add02fa6c8a03ed90df890c40dc16);
+            
+    
+            var marker_7675598e940230e55b378835997f0326 = L.marker(
+                [13.99, 100.27],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_ac3b74d762b013354775a0cce957e091 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40178335a18ea70f8377d585f76d2ad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0efbb0c574a8c17596f26e8f90f8b72 = $(`<div id="html_e0efbb0c574a8c17596f26e8f90f8b72" style="width: 100.0%; height: 100.0%;">Tourist-Dominated Hotspot Tourist Hired Trips: 10 Non-Tourist Hired Trips: 0 Ratio: 10000000.00</div>`)[0];
+                popup_40178335a18ea70f8377d585f76d2ad1.setContent(html_e0efbb0c574a8c17596f26e8f90f8b72);
+            
+        
+
+        marker_7675598e940230e55b378835997f0326.bindPopup(popup_40178335a18ea70f8377d585f76d2ad1)
+        ;
+
+        
+    
+    
+                marker_7675598e940230e55b378835997f0326.setIcon(icon_ac3b74d762b013354775a0cce957e091);
+            
+    
+            var marker_c58a1003a6ee5a4feb7c3c61e974a67e = L.marker(
+                [14.2, 100.89],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_0748bd3fc8a9a4604bdaa953ff0c1ff8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3af0ca0a796b971384e2cebf71592c80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80033ada1abe4471b138ad487ceac614 = $(`<div id="html_80033ada1abe4471b138ad487ceac614" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_3af0ca0a796b971384e2cebf71592c80.setContent(html_80033ada1abe4471b138ad487ceac614);
+            
+        
+
+        marker_c58a1003a6ee5a4feb7c3c61e974a67e.bindPopup(popup_3af0ca0a796b971384e2cebf71592c80)
+        ;
+
+        
+    
+    
+                marker_c58a1003a6ee5a4feb7c3c61e974a67e.setIcon(icon_0748bd3fc8a9a4604bdaa953ff0c1ff8);
+            
+    
+            var marker_c160dd76d2b03e31289b1d4962399d59 = L.marker(
+                [14.03, 100.15],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_48ac11a226fd1d6deee2efa11943ecc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b07540a73e147faad32779ed6241209 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60277d6269a63d1902ffa8a1ffa77b8b = $(`<div id="html_60277d6269a63d1902ffa8a1ffa77b8b" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_8b07540a73e147faad32779ed6241209.setContent(html_60277d6269a63d1902ffa8a1ffa77b8b);
+            
+        
+
+        marker_c160dd76d2b03e31289b1d4962399d59.bindPopup(popup_8b07540a73e147faad32779ed6241209)
+        ;
+
+        
+    
+    
+                marker_c160dd76d2b03e31289b1d4962399d59.setIcon(icon_48ac11a226fd1d6deee2efa11943ecc9);
+            
+    
+            var marker_60257a4f8d0ff50f02d43f2ede03a409 = L.marker(
+                [14.03, 100.14],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_ce090ab51f288bc1279d7bca3ea54a52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6e0402d72003debf7f1a3bf95112a2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0aa55b165d9d74707b907eca2f8c3bf = $(`<div id="html_c0aa55b165d9d74707b907eca2f8c3bf" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 5 Ratio: 0.00</div>`)[0];
+                popup_e6e0402d72003debf7f1a3bf95112a2a.setContent(html_c0aa55b165d9d74707b907eca2f8c3bf);
+            
+        
+
+        marker_60257a4f8d0ff50f02d43f2ede03a409.bindPopup(popup_e6e0402d72003debf7f1a3bf95112a2a)
+        ;
+
+        
+    
+    
+                marker_60257a4f8d0ff50f02d43f2ede03a409.setIcon(icon_ce090ab51f288bc1279d7bca3ea54a52);
+            
+    
+            var marker_5c7c61b997c64e4051ca21e1775be9b4 = L.marker(
+                [14.03, 100.03],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_b2ca0a85185366c1a23096f23d62b1b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f50f54566316281d1ffd8f78cf4f98f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_707cce494ff16f8d4e31457c782311c0 = $(`<div id="html_707cce494ff16f8d4e31457c782311c0" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_0f50f54566316281d1ffd8f78cf4f98f.setContent(html_707cce494ff16f8d4e31457c782311c0);
+            
+        
+
+        marker_5c7c61b997c64e4051ca21e1775be9b4.bindPopup(popup_0f50f54566316281d1ffd8f78cf4f98f)
+        ;
+
+        
+    
+    
+                marker_5c7c61b997c64e4051ca21e1775be9b4.setIcon(icon_b2ca0a85185366c1a23096f23d62b1b5);
+            
+    
+            var marker_6f42a825a42649717cc044397193bc5c = L.marker(
+                [14.03, 100.01],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_69d190f270a8cf0b84b0671938bd7c76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_669317ac12a687f744857d7565f09071 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84f55fffca98e9c673dd165d69111bf5 = $(`<div id="html_84f55fffca98e9c673dd165d69111bf5" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_669317ac12a687f744857d7565f09071.setContent(html_84f55fffca98e9c673dd165d69111bf5);
+            
+        
+
+        marker_6f42a825a42649717cc044397193bc5c.bindPopup(popup_669317ac12a687f744857d7565f09071)
+        ;
+
+        
+    
+    
+                marker_6f42a825a42649717cc044397193bc5c.setIcon(icon_69d190f270a8cf0b84b0671938bd7c76);
+            
+    
+            var marker_49f1d68adc528f38bbf4099b1dcf04bd = L.marker(
+                [14.02, 100.82],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_51b0179fd87237e19d9428e682f3be18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51038d2505c9c38b938c1cf5b6e52641 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_029e9dbe134eedef16a947af66cde51c = $(`<div id="html_029e9dbe134eedef16a947af66cde51c" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 2 Ratio: 0.00</div>`)[0];
+                popup_51038d2505c9c38b938c1cf5b6e52641.setContent(html_029e9dbe134eedef16a947af66cde51c);
+            
+        
+
+        marker_49f1d68adc528f38bbf4099b1dcf04bd.bindPopup(popup_51038d2505c9c38b938c1cf5b6e52641)
+        ;
+
+        
+    
+    
+                marker_49f1d68adc528f38bbf4099b1dcf04bd.setIcon(icon_51b0179fd87237e19d9428e682f3be18);
+            
+    
+            var marker_df6d3555043b5022e43558c5693083e5 = L.marker(
+                [14.02, 100.79],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_1ddabd85fe8c78f0d8664979d5a7433c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_996f6cfc70e1d393df9c4febb38c5fa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78f4c55dcf2140dcab86162c89b52e9c = $(`<div id="html_78f4c55dcf2140dcab86162c89b52e9c" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_996f6cfc70e1d393df9c4febb38c5fa8.setContent(html_78f4c55dcf2140dcab86162c89b52e9c);
+            
+        
+
+        marker_df6d3555043b5022e43558c5693083e5.bindPopup(popup_996f6cfc70e1d393df9c4febb38c5fa8)
+        ;
+
+        
+    
+    
+                marker_df6d3555043b5022e43558c5693083e5.setIcon(icon_1ddabd85fe8c78f0d8664979d5a7433c);
+            
+    
+            var marker_da26d01b4c06899e4b171df7be767b2b = L.marker(
+                [14.02, 100.63],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_8b579e2b16d2bda87a2323d250187391 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84412a5df12845295d7572b2ea23b7d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70cc37d4c8c1f8ff17aaccec37c13931 = $(`<div id="html_70cc37d4c8c1f8ff17aaccec37c13931" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 6 Ratio: 0.00</div>`)[0];
+                popup_84412a5df12845295d7572b2ea23b7d0.setContent(html_70cc37d4c8c1f8ff17aaccec37c13931);
+            
+        
+
+        marker_da26d01b4c06899e4b171df7be767b2b.bindPopup(popup_84412a5df12845295d7572b2ea23b7d0)
+        ;
+
+        
+    
+    
+                marker_da26d01b4c06899e4b171df7be767b2b.setIcon(icon_8b579e2b16d2bda87a2323d250187391);
+            
+    
+            var marker_16e795fa8559525b37e620dbaf49dc4f = L.marker(
+                [13.62, 100.82],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_4d1c4466715d9d5fb3fe38e3a5e55e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_842c458cbeff78f87ba678e462508bec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4cd6153f1f8480139f7ad2e7f4bb2dd = $(`<div id="html_e4cd6153f1f8480139f7ad2e7f4bb2dd" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_842c458cbeff78f87ba678e462508bec.setContent(html_e4cd6153f1f8480139f7ad2e7f4bb2dd);
+            
+        
+
+        marker_16e795fa8559525b37e620dbaf49dc4f.bindPopup(popup_842c458cbeff78f87ba678e462508bec)
+        ;
+
+        
+    
+    
+                marker_16e795fa8559525b37e620dbaf49dc4f.setIcon(icon_4d1c4466715d9d5fb3fe38e3a5e55e17);
+            
+    
+            var marker_4d1735fde3e94683697fd87d1e8703a1 = L.marker(
+                [13.62, 100.83],
+                {
+}
+            ).addTo(map_706d9b9449f3db842151ff53b520897d);
+        
+    
+            var icon_9b458f11f1d8732cdd6b8af4d1bf8ccb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c561ec0fd04488cb809b605d5c6102bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_088671f1c077072139820672a64adfba = $(`<div id="html_088671f1c077072139820672a64adfba" style="width: 100.0%; height: 100.0%;">Non-Tourist-Dominated Hotspot Tourist Hired Trips: 0 Non-Tourist Hired Trips: 0 Ratio: 0.00</div>`)[0];
+                popup_c561ec0fd04488cb809b605d5c6102bf.setContent(html_088671f1c077072139820672a64adfba);
+            
+        
+
+        marker_4d1735fde3e94683697fd87d1e8703a1.bindPopup(popup_c561ec0fd04488cb809b605d5c6102bf)
+        ;
+
+        
+    
+    
+                marker_4d1735fde3e94683697fd87d1e8703a1.setIcon(icon_9b458f11f1d8732cdd6b8af4d1bf8ccb);
+            
+</script>
+</html>
